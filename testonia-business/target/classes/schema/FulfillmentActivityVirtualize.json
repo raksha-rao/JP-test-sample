@@ -1,0 +1,23 @@
+{
+	"map" : {
+	},
+	"defaultValues" : {
+	},
+	"transform" : {
+	},
+	"ignoreNodeList" : [
+	],
+	"excludeXPath" : [
+	
+	],
+	"defaultValueMap" : {
+	},
+	"ignoreZeroValueNodeList" : [
+	],
+	"ignoreEmptyNodeList" : [
+	],
+	"setIfNonEmpty" : {
+	},
+	"unsetFlags" : {
+	}
+}

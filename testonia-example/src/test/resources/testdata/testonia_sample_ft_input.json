@@ -1,0 +1,142 @@
+[
+	{
+	  "testCaseId" : "sampleHappyPathTestForFulfillPayment",
+	  "buyerData" : {
+	  	"user" : {
+		    	"country" : "US",
+		    	"currency" : "USD",
+		    	"accountType" : "personal",
+		    	"bank": [
+	    				{
+					      "bankAccountType": "checking",
+					      "country": "US",
+						  "currency": "USD",
+						  "confirmed" : "true"
+				    	}
+		  		],
+		  		"confirmEmail" : "true"
+	  		}
+	  },
+	  "sellerData" : {
+	  	"user" : {
+	    	"country" : "US",
+	    	"currency" : "USD",
+	    	"accountType" : "business",
+	    	"bank": [
+    				{
+				      "bankAccountType": "checking",
+					  "country": "US",
+					  "currency": "USD",
+					  "confirmed" : "true"
+			    	}
+		  	],
+		  	"confirmEmail" : "true"
+	  	}
+	  },
+	  "fulfillPaymentPlanOptions" : {
+	    "paymentFlowType" : "WALLET",
+	    "txnAmount" : {
+	      "amount" : 1000,
+	      "currencyCode" : "USD"
+	    },
+	    "memo" : "This is Test",
+	    "fundingSource" : "IACH"
+	  }
+	},
+	{
+	  "testCaseId" : "sampleTestForFulfillPaymentWithBuyerFlag",
+	  "buyerData" : {
+	  	"user" : {
+		    	"country" : "US",
+		    	"currency" : "USD",
+		    	"accountType" : "personal",
+		    	"bank": [
+	    				{
+					      "bankAccountType": "checking",
+					      "country": "US",
+						  "currency": "USD",
+						  "confirmed" : "true"
+				    	}
+		  		],
+		  		"confirmEmail" : "true"
+	  		},
+	  	"flags" : [
+	  		"WUSER_AUTH_ACH_RISK_EXEMPT_SENDER"
+	  	]
+	  },
+	  "sellerData" : {
+	  	"user" : {
+	    	"country" : "US",
+	    	"currency" : "USD",
+	    	"accountType" : "business",
+	    	"bank": [
+					{
+				      "bankAccountType": "savings"
+			    	}
+		  	],
+		  	"confirmEmail" : "true"
+	  	}
+	  },
+	  "fulfillPaymentPlanOptions" : {
+	    "paymentFlowType" : "WALLET",
+	    "txnAmount" : {
+	      "amount" : 1000,
+	      "currencyCode" : "USD"
+	    },
+	    "memo" : "This is Test",
+	    "fundingSource" : "IACH"
+	  }
+	},
+	{
+	  "testCaseId" : "sampleTestForFulfillPaymentWithSellerPreference",
+	  "buyerData" : {
+	  	"user" : {
+		    	"country" : "US",
+		    	"currency" : "USD",
+		    	"accountType" : "personal",
+		    	"bank": [
+	    				{
+					      "bankAccountType": "checking",
+					      "country": "US",
+						  "currency": "USD",
+						  "confirmed" : "true"
+				    	}
+		  		],
+		  		"confirmEmail" : "true"
+	  		}
+	  },
+	  "sellerData" : {
+	  	"user" : {
+	    	"country" : "US",
+	    	"currency" : "USD",
+	    	"accountType" : "business",
+	    	"bank": [
+					{
+				      "bankAccountType": "savings"
+			    	}
+		  	],
+		  	"confirmEmail" : "true"
+	  	},
+	  	"preferences" : [
+	  		{
+	  			"name" : "NO_SEND_MONEY",
+	  			"value" : "MANUAL"
+	  		},
+	  		{
+	  			"name" : "AUTO_ACCEPT_CURRENCY",
+	  			"value" : "NEVER"
+	  		}
+	  		
+	  	]
+	  },
+	  "fulfillPaymentPlanOptions" : {
+	    "paymentFlowType" : "WALLET",
+	    "txnAmount" : {
+	      "amount" : 1000,
+	      "currencyCode" : "USD"
+	    },
+	    "memo" : "This is Test",
+	    "fundingSource" : "IACH"
+	  }
+	}
+]

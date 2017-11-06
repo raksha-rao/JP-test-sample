@@ -1,0 +1,69 @@
+{
+	"map" : {
+		"virtual_holding_ids" : 2000,
+		"virtual_transaction_ids" : 3000,
+		"virtual_activity_ids" : 4000,
+		"virtual_activity_event_ids" : 5000,
+		"virtual_participant_transaction_ids" : "6000",
+		"virtual_account_numbers" : "7000",
+		"virtual_journal_activity_ids" : "8000",
+		"virtual_cc_ct_ft_handle_ids" : "9000",
+		"virtual_fee_ids" : "10000",
+		"virtual_skeys" : "11000",
+		"virtual_adjustment_ids" : "12000",
+		"virtual_aggregate_account_numbers" : "13000",
+		"virtual_exch_rate_ids" : "14000",
+		"virtual_recon_match_ids" : "15000",
+		"virtual_vendor_ids" : "16000",
+		"virtual_cctrans_ids" : "17000",
+		"virtual_finsys_trans_ids" : "18000",
+		"virtual_trace_numbers" : "19000",
+		"virtual_fi_ids" : "20000",
+		"virtual_bctrans_ids" : "21000",
+		"virtual_time_created_unix_secs": "22000"
+	}, 
+	"transform" : {
+		"journal_aid" : "virtual_journal_activity_ids",
+		"activity_id" : "virtual_activity_ids",
+		"debit_activity_event_id" : "virtual_activity_event_ids",
+		"debit_user_pp_account_number" : "virtual_account_numbers",
+		"debit_pt_id" : "virtual_participant_transaction_ids",
+		"credit_activity_event_id" : "virtual_activity_event_ids",
+		"credit_user_pp_account_number" : "virtual_account_numbers",
+		"credit_pt_id" : "virtual_participant_transaction_ids",
+		"void_journal_id" : "virtual_journal_activity_ids",
+		"participant_transaction_id" : "virtual_participant_transaction_ids",
+		
+		"individual_account_num" : "virtual_account_numbers",
+		"pp_customer_acct_num" : "virtual_account_numbers",
+		"aggregate_account_num" : "virtual_account_numbers",
+
+		"reclassified_activity_id" : "virtual_activity_ids",
+		"holding_id" : "virtual_holding_ids"
+	},
+	"transformXPath" : {
+        "//validation_fixture/engine/payable_journal_entry/item[*]/time_created_unix_secs" : "virtual_time_created_unix_secs",
+        "//validation_fixture/engine/payable_journal_entry/item[*]/account_number" : "virtual_account_numbers"
+    },
+	
+	"setIfNonEmpty" : {
+		"//validation_fixture/engine/financial_journal_2/item[*]/db_id" : "non-empty db_id",
+		"//validation_fixture/engine/clearing_journal_entry/item[*]/time_created_unix_secs" : "1",
+		"//validation_fixture/engine/clearing_journal_entry/item[*]/row_created_time" : "1",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/time_created_unix_secs" : "1",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/activity_event_sequence" : "1",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/row_created_time" : "1",
+		"//validation_fixture/engine/bonus_grant_entry/item[*]/row_created_time" : "1",
+		"//validation_fixture/engine/bonus_grant_entry/item[*]/time_created_unix_secs" : "1",
+		"//validation_fixture/engine/payable_journal_entry/item[*]/row_created_time" : "1",
+		"//validation_fixture/engine/receivable_journal_entry/item[*]/row_created_time" : "1",
+		"//validation_fixture/engine/receivable_journal_entry/item[*]/time_created_unix_secs" : "1"
+	},
+	"ignoreXPath" : [
+		"//validation_fixture/engine/clearing_journal_entry/item[*]/trans_amount",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/data",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/fee_amount",
+		"//validation_fixture/engine/fees_charged_journal_entry/item[*]/fee_amount_usd",
+		"//validation_fixture/engine/financial_journal_2/item[*]/amount"
+	]
+}

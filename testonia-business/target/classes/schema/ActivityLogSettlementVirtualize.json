@@ -1,0 +1,54 @@
+{
+  "map" : {
+    "virtual_ParticipantTxnId" : 1000,
+    "virtual_ReferenceTxnId" : 2000,
+    "virtual_AccountNumber" : 3000,
+    "virtual_InstrumentId" : 4000,
+    "virtual_bank_account_number_enc" : 7000,
+    "virtual_iban_hmac" : 8000,
+    "virtual_iban_enc" : 9000
+  },
+  "transform" : {
+    "ParticipantTxnId" : "virtual_ParticipantTxnId",
+    "ReferenceTxnId" : "virtual_ReferenceTxnId",
+    "AccountNumber" : "virtual_AccountNumber",
+    "StoredValueId" : "virtual_InstrumentId",
+    "BankId" : "virtual_InstrumentId",
+    "bank_account_number_enc" : "virtual_bank_account_number_enc",
+    "iban_hmac" : "virtual_iban_hmac",
+    "iban_enc" : "virtual_iban_enc"
+  },
+  "ignoreNodeList" : [
+    "AccountName",
+    "FirstName",
+    "LastName",
+    "BillingAddressLine1",
+    "BillingAddressLine2",
+    "BillingAddressCity",
+    "BillingAddressPostalCode",
+    "BillingAddressState",
+    "BillingAddressCountry",
+    "BankIsserName",
+    "expected_clearing_time",
+    "funding_transaction_time_created",
+    "fulfillment_plan",
+    "fulfillment_context",
+    "participant_data_extensions",
+    "time_created",
+    "async_tasks",
+    "balance_posting_time",
+    "pypl_time_touched",
+    "flags03",
+    "transaction_flags3"
+  ],
+  "transformXPath" : {
+  },
+  "setIfNonEmpty" : {
+  },
+  "ignoreAttributeList" : [
+    "typesig",
+    "id",
+    "type",
+    "ref_id"
+  ]
+}

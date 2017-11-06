@@ -1,0 +1,30 @@
+{
+	"map": {
+		"virtual_refund_trans_id": 1000,
+		"virtual_time_completed": 1100,
+		"virtual_encrypted_refund_transaction_id": 1200,
+		"virtual_reversal_trans_id": 1300,
+		"virtual_encrypted_reversal_transaction_id": 1400,
+		"virtual_funding_source_id": 1500
+	},
+	"transform": {
+		"refund_trans_id": "virtual_refund_trans_id",
+		"time_completed": "virtual_time_completed",
+		"encrypted_refund_transaction_id": "virtual_encrypted_refund_transaction_id",
+		"reversal_trans_id": "virtual_reversal_trans_id",
+		"encrypted_reversal_transaction_id": "virtual_encrypted_reversal_transaction_id",
+		"funding_source_id": "virtual_funding_source_id",
+        "payout_transaction_id": "virtual_encrypted_refund_transaction_id",
+        "recoupment_transaction_id":"virtual_encrypted_refund_transaction_id"
+	},
+	"transformXPath": {
+		
+	},
+	"ignoreXPath": [
+		
+	],	
+	"ignoreAttributeList": [
+		"id",
+		"typesig"
+	]
+}

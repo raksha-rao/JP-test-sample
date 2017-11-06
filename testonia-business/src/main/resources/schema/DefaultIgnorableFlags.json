@@ -1,0 +1,59 @@
+{
+	"flagsInfo" : [
+		{
+			"ancestorTag": "wtransaction",
+			"flagsToIgnore": {
+				"flags1": ["68"],
+				"flags3": ["163840"],
+				"flags5": ["18014398509484080"],
+				"flags6": ["67584"]
+			}
+		},
+		{
+			"ancestorTag": "wuser_holding",
+			"flagsToIgnore": {
+				"flags": ["64"]
+			}
+		},
+		{
+			"ancestorTag" : "IPNFixture_ResultVO",
+			"flagsToIgnore": {
+				"flags5" : ["18014398509484032"],
+				"flags5_ext" : ["18014398509484032"],
+				"funding_flags5" : ["18014398509484032"],
+				"transaction_flags5" : ["18014398509484032"],
+				"flags6" : ["136"],
+				"funding_flags6" : ["136"],
+				"transaction_flags6" : ["136"]
+			}
+		},
+		{
+			"ancestorTag" : "DequeueFixture_ResultVO",
+			"flagsToIgnore": {
+				"transaction_flags" : ["68"],
+				"transaction_flags3" : ["163840"],
+				"flags5" : ["18014398509484080"],
+				"flags5_ext": ["18014398509484080"],
+				"funding_flags5": ["18014398509484080"],
+				"transaction_flags5": ["18014398509484080"],
+				"flags6": ["67720"],
+				"funding_flags6": ["67720"],
+				"transaction_flags6": ["67720"]
+			}
+		},
+		{
+			"ancestorTag" : "sender_transaction",
+			"flagsToIgnore": {
+				"transaction_flags" : ["68"],
+				"transaction_flags3" : ["163840"],
+				"flags5" : ["18014398509484080"],
+				"flags5_ext": ["18014398509484080"],
+				"funding_flags5": ["18014398509484080"],
+				"transaction_flags5": ["18014398509484080"],
+				"flags6": ["67720"],
+				"funding_flags6": ["67720"],
+				"transaction_flags6": ["67720"]
+			}
+		}
+	 ]
+}

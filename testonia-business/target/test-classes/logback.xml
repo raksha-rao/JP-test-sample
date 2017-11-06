@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<!-- Console Logging -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %X{TestId} %-5level %logger{36} %msg%n</pattern>
+		</encoder>
+	</appender>
+    
+    <!-- Start: TESTNG logging -->
+	<appender name="TESTNG" class="com.jptest.payments.fulfillment.testonia.core.reporting.TestNGAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %X{TestId} %level %logger %msg%n</pattern>
+		</layout>
+	</appender>
+    <!-- End: TESTNG logging -->
+    
+    <!-- Start: Logstash logging -->
+	<appender name="TESTNG" class="com.jptest.payments.fulfillment.testonia.core.reporting.LogstashAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %X{TestId} %level %logger %msg%n</pattern>
+		</layout>
+	</appender>
+    <!-- End: Logstash logging -->
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="TESTNG" />
+	</root>
+</configuration>

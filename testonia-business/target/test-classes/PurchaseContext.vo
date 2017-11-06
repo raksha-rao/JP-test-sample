@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<Money_PurchaseContextVO id="1" typesig="4a079b863a3f347e">
+	<item_details id="2" type="Merchant::ItemInvoiceVO" typesig="cb7f3b3fbec09ee0">
+		<invoice_parameters id="3" type="Money::PaymentInvoiceParametersVO" typesig="6876305f1713ef2d">
+			<xclick_parameters id="4" type="Merchant::InvoiceXClickParametersVO" typesig="6c4e421dce5746c7">
+				<xc_type type="long">0</xc_type>
+				<transaction_id type="ullong">0</transaction_id>
+				<account_number type="ullong">${senderAccountNumber}</account_number>
+				<counterparty type="ullong">${recipientAccountNumber}</counterparty>
+				<!--
+				<shipping_address_id type="ullong">6804989091982525832</shipping_address_id>
+				-->
+				<counterparty_alias type="String">${recipientEmail}</counterparty_alias>
+				<dcc_buyer_non_primary_alias type="String">dcc_buyer_non_primary_alias</dcc_buyer_non_primary_alias>
+				<counterparty_alias_type type="sint8">69</counterparty_alias_type>
+				<invoice type="String">${invoice}</invoice>
+				<item_name type="String">We Five</item_name>
+				<item_number type="String">14201</item_number>
+				<item_amount type="Currency">EUR1000</item_amount>
+				<quantity type="ulong">1</quantity>
+				<shipping_amount type="Currency">EUR0</shipping_amount>
+				<handling_amount type="Currency">EUR0</handling_amount>
+				<insurance_amount type="Currency">EUR0</insurance_amount>
+				<adjustment_amount type="Currency">EUR0</adjustment_amount>
+				<notify_url type="String">http://developer.stage2t9726.qa.jptest.com/cgi-bin/ipn_listener</notify_url>
+				<business_name type="String">business_name</business_name>
+				<business_cs_email type="String">${recipientEmail}</business_cs_email>
+				<business_cs_phone_container id="5" type="User::PhoneVO" typesig="ffffffffff023469">
+					<id type="ullong">6983271</id>
+					<party_id type="ullong">${recipientAccountNumber}</party_id>
+					<type type="ulong">1</type>
+					<!--
+					<country_code type="String">49</country_code>
+					<phone_number type="String">6993543739</phone_number>
+					<user_entered_phone_number type="String">6993543739</user_entered_phone_number>
+					-->
+					<phone_string type="String">${recipientPhone}</phone_string>
+					<is_active type="bool">true</is_active>
+					<is_primary type="bool">true</is_primary>
+					<tags repeating="true" type="String">
+						<item>HOME</item>
+						<item>DEFAULT</item>
+					</tags>
+					<confirmation_status type="String">VALID</confirmation_status>
+					<confirmation_authority type="String">PRTY_REL</confirmation_authority>
+					<confirmation_status_for_relationship type="String">VALID</confirmation_status_for_relationship>
+					<confirmation_authority_for_relationship type="String">MANUAL</confirmation_authority_for_relationship>
+					<time_created type="ulong">1485387190</time_created>
+					<time_removed type="ulong">0</time_removed>
+				</business_cs_phone_container>
+				<business_encoded type="String">business_encoded</business_encoded>
+				<custom type="String">custom</custom>
+				<flags type="ulong">1024</flags>
+				<sales_tax type="Currency">EUR0</sales_tax>
+				<sales_tax_percentage type="ulong">0</sales_tax_percentage>
+				<savings type="Currency">EUR0</savings>
+				<referral_url type="String">www.bml.com</referral_url>
+				<return_url type="String">www.jpinc.com</return_url>
+				<return_method type="ulong">0</return_method>
+				<button_source type="String">button_source</button_source>
+				<mrb_code type="String">mrb_code</mrb_code>
+				<customize repeating="true" type="Merchant::OptionCustomizationVO">
+					<item id="6" type="Merchant::OptionCustomizationVO" typesig="4875c21e">
+						<option_name type="String">Option_Name</option_name>
+						<option_selection type="String">option_selection</option_selection>
+					</item>
+				</customize>
+				<is_business type="bool">true</is_business>
+				<cart id="7" type="Merchant::CartVO" typesig="272d3da35965575e">
+					<cart_items repeating="true" type="Merchant::CartItemVO">
+						<item id="8" type="Merchant::CartItemVO" typesig="fc6b1765a5af9">
+							<id type="long">0</id>
+							<btn_id type="ullong">123</btn_id>
+							<item_discount type="llong">3</item_discount>
+							<item_number type="String">item_number</item_number>
+							<item_name type="String">item_name</item_name>
+							<quantity type="ulong">1</quantity>
+							<total_amount type="Currency">${totalAmount}</total_amount>
+							<item_amount type="Currency">${totalAmount}</item_amount>
+							<shipping type="Currency">EUR0</shipping>
+							<handling type="Currency">EUR0</handling>
+							<insurance type="Currency">EUR0</insurance>
+							<extra_shipping type="Currency">EUR0</extra_shipping>
+							<flags type="ulong">0</flags>
+							<tax type="bool">false</tax>
+							<tax_amount type="Currency">EUR0</tax_amount>
+							<currency_iso_code type="String">${currencyIsoCode}</currency_iso_code>
+							<no_shipping_option type="ulong">3</no_shipping_option>
+							<account_holder type="ulong">4</account_holder>
+							<short_flow type="ulong">5</short_flow>
+							<auction_site type="String">www.jpinc.com</auction_site>
+							<auction_item_num type="String">auction_item_number</auction_item_num>
+							<auction_transaction_id type="String">auction_transaction_id</auction_transaction_id>
+							<auction_buyer_id type="String">auction_buyer_id</auction_buyer_id>
+							<charset type="String">UTF-8</charset>
+							<hosted_button_keys_text type="String">hosted_button_keys_text</hosted_button_keys_text>
+						</item>
+					</cart_items>
+					<has_mark_as_solutiontype type="bool">false</has_mark_as_solutiontype>
+				</cart>
+				<cart_db_flags type="ulong">0</cart_db_flags>
+				<cart_db_id type="ullong">0</cart_db_id>
+				<use_address type="bool">true</use_address>
+				<address_override type="bool">true</address_override>
+				<address id="9" type="User::AddressVO" typesig="950253c588713">
+					<id type="ullong">6804999262263643085</id>
+					<party_id type="ullong">${recipientAccountNumber}</party_id>
+					<type type="sint8">0</type>
+					<addressee_name type="String"/>
+					<address1 type="String">${recipientAddressOne}</address1>
+					<address2 type="String">${recipientAddressTwo}</address2>
+					<city type="String">${recipientCity}</city>
+					<state type="String"/>
+					<zip type="String">${recipientZip}</zip>
+					<iso_country type="String">${recipientIsoCountry}</iso_country>
+					<is_high_res type="bool">false</is_high_res>
+					<additional_address_fields repeating="true" type="Common::StringTupleVO"/>
+					<is_canonical_format type="bool">false</is_canonical_format>
+					<is_po_box type="bool">false</is_po_box>
+					<is_partial_location type="bool">false</is_partial_location>
+					<normalization_status type="String">UNKNOWN</normalization_status>
+					<is_active type="bool">true</is_active>
+					<is_primary type="bool">true</is_primary>
+					<is_default_billing type="bool">true</is_default_billing>
+					<is_default_shipping type="bool">true</is_default_shipping>
+					<is_hidden type="bool">false</is_hidden>
+					<is_not_counted_against_quota type="bool">false</is_not_counted_against_quota>
+					<confirmation_status_for_relationship type="String">UNCONF</confirmation_status_for_relationship>
+					<confirmation_authority_for_relationship type="String">NONE</confirmation_authority_for_relationship>
+					<postal_confirmation_status type="String">VALID</postal_confirmation_status>
+					<postal_confirmation_authority type="String">INSPECT</postal_confirmation_authority>
+					<tags repeating="true" type="String">
+						<item>DEF_BILL</item>
+						<item>DEF_SHIP</item>
+					</tags>
+					<time_created type="ulong">1485387189</time_created>
+				</address>
+				<buyer_credit_promo_code type="String">buyer_credit_promo_code</buyer_credit_promo_code>
+				<contact_phone_container id="10" type="User::PhoneVO" typesig="ffffffffff023469">
+					<id type="ullong">6983268</id>
+					<party_id type="ullong">${senderAccountNumber}</party_id>
+					<type type="ulong">1</type>
+					<!--
+					<country_code type="String">49</country_code>
+					<phone_number type="String">4624496701</phone_number>
+					<user_entered_phone_number type="String">4624496701</user_entered_phone_number>
+                    -->
+					<phone_string type="String">${senderPhone}</phone_string>
+
+					<is_active type="bool">true</is_active>
+					<is_primary type="bool">true</is_primary>
+					<tags repeating="true" type="String">
+						<item>HOME</item>
+						<item>DEFAULT</item>
+					</tags>
+					<confirmation_status type="String">VALID</confirmation_status>
+					<confirmation_authority type="String">PRTY_REL</confirmation_authority>
+					<confirmation_status_for_relationship type="String">VALID</confirmation_status_for_relationship>
+					<confirmation_authority_for_relationship type="String">MANUAL</confirmation_authority_for_relationship>
+					<time_created type="ulong">1485387102</time_created>
+					<time_removed type="ulong">0</time_removed>
+				</contact_phone_container>
+				<charset type="String">UTF-8</charset>
+				<trans_data_map_id type="ullong">0</trans_data_map_id>
+				<merchant_callback id="11" type="Merchant::MerchantCallbackVO" typesig="5c4c4672">
+					<insurance_option_selected type="bool">true</insurance_option_selected>
+					<shipping_option_is_default type="bool">true</shipping_option_is_default>
+					<shipping_option_amount type="Currency">EUR0</shipping_option_amount>
+					<shipping_option_name type="String">shipping_option_name</shipping_option_name>
+					<shipping_tax_amount type="Currency">EUR0</shipping_tax_amount>
+					<insurance_amount type="Currency">EUR0</insurance_amount>
+					<is_flat_rate_shipping_option type="bool">true</is_flat_rate_shipping_option>
+					<gift_message type="String">gift_message</gift_message>
+					<option_gift_message type="ulong">1</option_gift_message>
+					<option_gift_receipt type="ulong">2</option_gift_receipt>
+					<option_gift_wrap type="ulong">3</option_gift_wrap>
+					<option_promotional_email_option type="ulong">4</option_promotional_email_option>
+					<option_survey_option type="ulong">5</option_survey_option>
+					<gift_wrap_name type="String">gift_wrap_name</gift_wrap_name>
+					<gift_wrap_amount type="Currency">EUR0</gift_wrap_amount>
+					<buyer_email_opt_in type="String">buyer_email_opt_in</buyer_email_opt_in>
+					<survey_question type="String">Survey Question</survey_question>
+					<survey_choice type="String">SurveyChoice</survey_choice>
+				</merchant_callback>
+			</xclick_parameters>
+			<txn_details id="12" type="Merchant::InvoiceTransactionDetailsVO" typesig="ffffffff88877fb9">
+				<flags type="ulong">1</flags>
+				<market type="ulong">2</market>
+				<details_num1 type="llong">1</details_num1>
+				<details_num2 type="llong">2</details_num2>
+				<details_num3 type="llong">3</details_num3>
+				<details_num4 type="llong">4</details_num4>
+				<details_num5 type="llong">5</details_num5>
+				<details_char1 type="String">details_char1</details_char1>
+				<details_char2 type="String">details_char5</details_char2>
+				<details_char3 type="String">details_char3</details_char3>
+				<details_char4 type="String">details_char4</details_char4>
+				<details_char5 type="String">details_char5</details_char5>
+				<hosted_button_keys_text type="String">hosted_button_keys_value_InvoiceTransactionDetailsVO</hosted_button_keys_text>
+			</txn_details>
+			<seller_options repeating="true" type="Merchant::TransactionSellerOptionsVO"/>
+			<number_of_items type="ullong">1</number_of_items>
+			<wax_transaction_id type="ullong">0</wax_transaction_id>
+			<cc_login_account_number type="ullong">0</cc_login_account_number>
+			<email_login_account_number type="ullong">0</email_login_account_number>
+			<dcc_buyer_non_primary_alias_id type="ullong">0</dcc_buyer_non_primary_alias_id>
+			<gxo_experience type="ulong">0</gxo_experience>
+			<uome_id type="ullong">0</uome_id>
+			<uome_target_alias_id type="ullong">0</uome_target_alias_id>
+			<uome_needs_completion type="ullong">1</uome_needs_completion>
+		</invoice_parameters>
+		<auction_items repeating="true" type="Marketplaces::AuctionItemVO">
+			<item id="13" type="Marketplaces::AuctionItemVO" typesig="266bb7121dd3787a">
+				<id type="ullong">0</id>
+				<bid_amount type="Currency">${totalAmount}</bid_amount>
+				<shipping_amount type="Currency">EUR0</shipping_amount>
+				<insurance_amount type="Currency">EUR0</insurance_amount>
+				<auction_site type="String">jpinc</auction_site>
+				<item_code type="String">280001527851</item_code>
+				<quantity type="ulong">1</quantity>
+				<auction_time type="ulong">0</auction_time>
+				<auction_username type="String">${senderEmail}</auction_username>
+				<site_transaction_id type="String">7511817018</site_transaction_id>
+				<tlh_score type="ulong">0</tlh_score>
+				<seller_username type="String">${recipientEmail}</seller_username>
+				<buyer_username type="String">${senderEmail}</buyer_username>
+				<tax_amount type="Currency">EUR0</tax_amount>
+				<sales_tax type="ulong">0</sales_tax>
+				<shipping_method type="ulong">0</shipping_method>
+				<shipping_carrier type="ulong">0</shipping_carrier>
+				<flags type="ulong">8192</flags>
+				<buyer_protection type="long">0</buyer_protection>
+				<time_listed type="ulong">0</time_listed>
+				<itmlvl_base_shipping type="Currency">EUR0</itmlvl_base_shipping>
+				<itmlvl_addl_shipping type="Currency">EUR0</itmlvl_addl_shipping>
+				<itmlvl_handling type="Currency">EUR0</itmlvl_handling>
+				<itmlvl_tax type="Currency">EUR0</itmlvl_tax>
+				<adjustment_amount type="Currency">EUR0</adjustment_amount>
+				<buyer_email type="String">${senderEmail}</buyer_email>
+				<tax_info id="14" type="Marketplaces::TaxDataVO" typesig="522ae5f6cd38">
+					<tax_amount type="Currency">EUR0</tax_amount>
+					<amount_overridden type="bool">false</amount_overridden>
+					<applicable_tax id="15" type="Marketplaces::TaxJurisdictionVO" typesig="26abfd0">
+						<state type="String"/>
+						<percentage type="ulong">0</percentage>
+						<shipping_in_tax type="bool">false</shipping_in_tax>
+					</applicable_tax>
+				</tax_info>
+				<is_consolidated type="bool">false</is_consolidated>
+				<shipping_in_tax type="bool">false</shipping_in_tax>
+				<insurance_type type="ulong">0</insurance_type>
+				<insurance_type_valid type="bool">false</insurance_type_valid>
+				<shipping_in_tax_valid type="bool">false</shipping_in_tax_valid>
+				<aawb_id type="ullong">0</aawb_id>
+				<seller_email type="String">${recipientEmail}</seller_email>
+				<pay_to_email type="String">lamhesh@jptest.com</pay_to_email>
+			</item>
+		</auction_items>
+	</item_details>
+	<risk_transport_data id="16" type="Risk::RiskTransportDataVO" typesig="169935e097360482">
+		<buyer id="17" type="Risk::RiskUserMerchantExtensionVO" typesig="45f816de2ffe">
+			<username type="String">${senderEmail}</username>
+			<jpincsiteid type="long">0</jpincsiteid>
+			<ratinginfo id="18" type="Risk::jpincRatingInfoVO" typesig="4741c30c"/>
+		</buyer>
+		<seller id="19" type="Risk::RiskUserMerchantExtensionVO" typesig="45f816de2ffe">
+			<username type="String">${recipientEmail}</username>
+			<jpincsiteid type="long">0</jpincsiteid>
+			<ratinginfo id="20" type="Risk::jpincRatingInfoVO" typesig="4741c30c"/>
+		</seller>
+		<token_id type="String">9LW82827DX010613K</token_id>
+	</risk_transport_data>
+	<merchant_filter_override type="ulong">1</merchant_filter_override>
+	<transaction_shipping_details id="21" type="Money::TransactionShippingDetailsVO" typesig="60fcf1819044bfe5">
+		<shipping_address id="22" type="User::AddressVO" typesig="950253c588713">
+			<id type="ullong">6804989091982525832</id>
+			<party_id type="ullong">${senderAccountNumber}</party_id>
+			<type type="sint8">0</type>
+			<addressee_name type="String"/>
+			<address1 type="String">${senderAddressOne}</address1>
+			<address2 type="String">${senderAddressTwo}</address2>
+			<city type="String">${senderCity}</city>
+			<state type="String"/>
+			<zip type="String">${senderZip}</zip>
+			<iso_country type="String">${senderIsoCountry}</iso_country>
+			<is_high_res type="bool">false</is_high_res>
+			<additional_address_fields repeating="true" type="Common::StringTupleVO"/>
+			<is_canonical_format type="bool">false</is_canonical_format>
+			<is_po_box type="bool">false</is_po_box>
+			<is_partial_location type="bool">false</is_partial_location>
+			<normalization_status type="String">UNKNOWN</normalization_status>
+			<is_active type="bool">true</is_active>
+			<is_primary type="bool">true</is_primary>
+			<is_default_billing type="bool">true</is_default_billing>
+			<is_default_shipping type="bool">true</is_default_shipping>
+			<is_hidden type="bool">false</is_hidden>
+			<is_not_counted_against_quota type="bool">false</is_not_counted_against_quota>
+			<confirmation_status_for_relationship type="String">UNCONF</confirmation_status_for_relationship>
+			<confirmation_authority_for_relationship type="String">NONE</confirmation_authority_for_relationship>
+			<postal_confirmation_status type="String">VALID</postal_confirmation_status>
+			<postal_confirmation_authority type="String">INSPECT</postal_confirmation_authority>
+			<tags repeating="true" type="String">
+				<item>DEF_BILL</item>
+				<item>DEF_SHIP</item>
+			</tags>
+			<time_created type="ulong">1485387101</time_created>
+		</shipping_address>
+		<address_confirmation_override type="String">ADDIC</address_confirmation_override>
+	</transaction_shipping_details>
+	<is_transaction_ic_plus_enabled type="bool">false</is_transaction_ic_plus_enabled>
+</Money_PurchaseContextVO>

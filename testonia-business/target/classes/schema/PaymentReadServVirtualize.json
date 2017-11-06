@@ -1,0 +1,40 @@
+{
+  "map": {
+    "virtual_reference_value": 1000,
+    "virtual_id": 2000,
+    "virtual_account_numbers" : 1000,
+    "virtual_payment_side_id" : 3000,
+    "virtual_activity_id" : 4000,
+    "virtual_encrypted_id" : 5000,
+    "virtual_serialized_data" :6000
+    
+  },
+  "transform": {
+    "id": "virtual_id",
+    "account_number" : "virtual_account_numbers",
+    "payment_side_id" : "virtual_payment_side_id",
+    "activity_id" : "virtual_activity_id"  ,
+    "encrypted_id":  "virtual_encrypted_id",
+    "parent_id" : "virtual_activity_id",
+    "shared_id" : "virtual_activity_id",
+    "serialized_data" : "virtual_serialized_data"
+  },
+  "transformXPath": {
+    "//Payments_GetLegacyEquivalentByPaymentReferenceResponse/related_payment_references/item[*]/reference_value": "virtual_reference_value",
+    "//Payments_GetLegacyEquivalentByPaymentReferenceResponse/related_payment_references/item[*]/@id": "virtual_id"
+  },
+  "ignoreNodeList" :[
+        "last_updated_time",
+        "time_processed",
+        "time_user",
+        "time_created",
+        "time_updated"
+   ],
+  "ignoreXPath": [
+    "//response_data/item[*][@type='Compliance::ComplianceDecisionVO']"
+  ],
+  "ignoreAttributeList" : [
+    "id",
+    "typesig"
+  ]
+}

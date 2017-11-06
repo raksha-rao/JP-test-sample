@@ -1,0 +1,21 @@
+{
+	"map": {
+		
+	},
+	"transform": {
+		
+	},
+	"transformXPath": {
+		
+	},
+	"ignoreXPath": [
+		"//*[local-name()='original_txn_timestamp' and text()!=0]",
+		"//*[local-name()='encrypted_id' and text()!=0]",
+		"//text()[normalize-space(.)='']",
+		"//*[local-name()='wmessage']"
+	],	
+	"ignoreAttributeList": [
+		"id",
+		"typesig"
+	]
+}

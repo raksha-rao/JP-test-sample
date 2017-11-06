@@ -1,0 +1,56 @@
+{
+	"map": {
+		"virtual_activityId": 100,
+		"virtual_transactionHandle": 200,
+		"virtual_accountNumber": 300,
+		"virtual_emailAddress": 400,
+		"virtual_name": 500,
+		"virtual_backingInstrumentId": 600,
+		"virtual_storedValueId": 700,
+		"virtual_balanceAccountId": 800,
+		"virtual_unencryptedBalanceAccountId": 900,
+		"virtual_userAccountNumber": 1000,
+		"virtual_instructionId": 1100,
+		"virtual_internalIdempotencyId": 1200,
+		"virtual_encryptedUserId": 1300,
+		"virtual_firstName": 1400,
+		"virtual_feeAuditTrailData": 1500,
+		"virtual_serializedData": 1600,
+		"virtual_shortDescription": 1700,
+		"virtual_exchangeRateQuoteAmount": 1800,
+		"virtual_currencyConversionInfoOutData": 1900,
+		"virtual_valueConversionId": 2000,
+		"virtual_parentTransactionVersion": 2100 
+	},
+	"transform": {
+		"activityId": "virtual_activityId",
+		"transactionHandle": "virtual_transactionHandle",
+		"accountNumber": "virtual_accountNumber",
+		"emailAddress": "virtual_emailAddress",
+		"backingInstrumentId": "virtual_backingInstrumentId",
+		"storedValueId": "virtual_storedValueId",
+		"balanceAccountId": "virtual_balanceAccountId",
+		"unencryptedBalanceAccountId": "virtual_unencryptedBalanceAccountId",
+		"userAccountNumber": "virtual_userAccountNumber",
+		"instructionId": "virtual_instructionId",
+		"internalIdempotencyId": "virtual_internalIdempotencyId",
+		"encryptedUserId": "virtual_encryptedUserId",
+		"firstName": "virtual_firstName",
+		"feeAuditTrailData": "virtual_feeAuditTrailData",
+		"serializedData": "virtual_serializedData",
+		"shortDescription": "virtual_shortDescription",
+		"exchangeRateQuoteAmount": "virtual_exchangeRateQuoteAmount",
+		"currencyConversionInfoOutData": "virtual_currencyConversionInfoOutData",
+		"valueConversionId": "virtual_valueConversionId",
+		"parentTransactionVersion" : "virtual_parentTransactionVersion"
+	},
+    "ignoreXPath" : [
+		"//reversal/transactions/paymentInstructions[*]/allowClosedInstrument"	      
+    ],	
+	"transformXPath": {
+	
+	},
+	"setIfNonEmpty": {
+		
+	}
+}
