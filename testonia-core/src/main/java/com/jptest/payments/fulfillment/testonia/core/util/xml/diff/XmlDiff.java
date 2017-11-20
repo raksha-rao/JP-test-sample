@@ -1,5 +1,6 @@
 package com.jptest.payments.fulfillment.testonia.core.util.xml.diff;
 
+import org.custommonkey.xmlunit.examples.RecursiveElementNameAndTextQualifier;
 import org.w3c.dom.Document;
 
 /**
@@ -27,5 +28,9 @@ public class XmlDiff  {
 
     public boolean similar() {
         return false;
+    }
+
+    public void overrideElementQualifier(RecursiveElementNameAndTextQualifier recursiveElementNameAndTextQualifier) {
+
     }
 }

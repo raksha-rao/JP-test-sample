@@ -1,7 +1,5 @@
 package com.jptest.payments.fulfillment.testonia.core.exception;
 
-import com.jptest.payments.fulfillment.testonia.core.TestComponent;
-
 /**
  * This is used as a wrapper over the exceptions we capture while
  * running any {@link TestComponent} for the test case execution

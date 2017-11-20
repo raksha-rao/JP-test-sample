@@ -4,11 +4,12 @@ import java.io.IOException;
 import javax.inject.Inject;
 import javax.ws.rs.NotSupportedException;
 import javax.xml.parsers.ParserConfigurationException;
+
+import com.jptest.payments.fulfillment.testonia.core.util.FileHelper;
 import org.apache.commons.configuration.Configuration;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 import com.jptest.payments.fulfillment.testonia.core.exception.TestExecutionException;
-import com.jptest.payments.fulfillment.testonia.core.util.FileHelper;
 import com.jptest.payments.fulfillment.testonia.core.util.HttpClientUtil;
 import com.jptest.payments.fulfillment.testonia.core.util.xml.XMLHelper;
 

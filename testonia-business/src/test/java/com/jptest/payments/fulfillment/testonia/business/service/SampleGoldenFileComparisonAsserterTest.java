@@ -10,11 +10,9 @@ import com.jptest.sampletest.SampleGoldenFileComparisonAsserter;
 import org.apache.commons.configuration.Configuration;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
@@ -25,7 +23,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 
-@RunWith(MockitoJUnitRunner.class)
+
 public class SampleGoldenFileComparisonAsserterTest {
 
     private SampleGoldenFileComparisonAsserter sampleGoldenFileComparisonAsserter;

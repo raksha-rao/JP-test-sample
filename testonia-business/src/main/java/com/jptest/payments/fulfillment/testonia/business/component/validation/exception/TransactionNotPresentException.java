@@ -1,6 +1,5 @@
 package com.jptest.payments.fulfillment.testonia.business.component.validation.exception;
 
-import com.jptest.payments.fulfillment.testonia.core.TestComponent;
 import com.jptest.payments.fulfillment.testonia.core.exception.TestExecutionSystemException;
 
 /**
